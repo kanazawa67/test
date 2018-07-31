@@ -10,4 +10,5 @@
 <fullyQualifiedTypeName name="com.internousdev.webproj4.dto.LoginDTO"/>
 <fullyQualifiedTypeName name="java.lang.Object"/>
 <fullyQualifiedTypeName name="com.internousdev.template.dao.UserCreateCompleteDAO"/>
+<fullyQualifiedTypeName name="java.lang.Exception"/>
 </qualifiedTypeNameHistroy>

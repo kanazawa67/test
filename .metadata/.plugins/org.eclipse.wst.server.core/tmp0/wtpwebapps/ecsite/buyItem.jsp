@@ -28,14 +28,14 @@ table{
 text-align:center;
 margin:0 auto;
 }
-/*=======ecsite LAYOUT========*/
+/*=======ID LAYOUT========*/
 #top{
 width:780px;
 margin:30px auto;
 border:1px solid #333;
 }
 #header{
-width:100%
+width:100%:
 height:80px;
 background-color:black;
 }
@@ -50,10 +50,6 @@ height:80px;
 background-color:black;
 clear:both;
 }
-#text-center{
-display inline-block;
-text-align:center;
-}
 
 </style>
 </head>
@@ -63,9 +59,10 @@ text-align:center;
 		<div id="pr">
 		</div>
 	</div>
-	<div id="top">
-		<p>BuyItem</p>
-	</div>
+	<div id="main">
+		<div id="top">
+			<p>BuyItem</p>
+		</div>
 	<div>
 		<s:form action="BuyItemAction">
 		<table>
@@ -85,6 +82,7 @@ text-align:center;
 					<s:property value="session.buyItem_price"/><span>円</span>
 				</td>
 			</tr>
+			<tr>
 				<td>
 					<span>購入個数</span>
 				</td>
@@ -98,7 +96,16 @@ text-align:center;
 				</select>
 			</td>
 		</tr>
-				<tr>
+		<tr>
+			<td>
+				<span>支払い方法</span>
+			</td>
+			<td>
+				<input type="radio" name="pay" value="1" checked="checked">現金払い
+				<input type="radio" name="pay" value="2">クレジットカード
+				</td>
+			</tr>
+			<tr>
 					<td>
 						<s:submit value="購入"/>
 					</td>
@@ -108,6 +115,7 @@ text-align:center;
 	<div>
 	<p>前画面に戻る場合は<a href='<s:url action="GoHomeAction"/>'>こちら</a></p>
 	<p>マイページは<a href='<s:url action="MyPageAction"/>'>こちら</a></p>
+	</div>
 	</div>
 	</div>
 	<div id="footer">
