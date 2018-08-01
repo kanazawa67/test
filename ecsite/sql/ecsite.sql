@@ -8,7 +8,7 @@ use ecsite;
 drop table if exists login_user_transaction;
 
 create table login_user_transaction(
-id int null primary key auto_increment,
+id int not null primary key auto_increment,
 login_id varchar(16) unique,
 login_pass varchar(16),
 user_name varchar(50),

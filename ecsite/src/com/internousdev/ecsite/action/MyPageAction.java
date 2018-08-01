@@ -16,6 +16,7 @@ import com.opensymphony.xwork2.ActionSupport;
 
 
 
+
 public class MyPageAction extends ActionSupport implements SessionAware{
 
 	public Map<String,Object> session;
