@@ -6,6 +6,8 @@ public class LoginDTO {
 	private String loginPassword;
 	private String userName;
 	private boolean loginFlg=false;
+	private boolean kanriFlg=false;
+
 
 	public String getLoginId(){
 		return loginId;
@@ -36,6 +38,15 @@ public class LoginDTO {
 	public void setLoginFlg(boolean loginFlg){
 		this.loginFlg=loginFlg;
 	}
+
+	public boolean getKanriFlg(){
+		return kanriFlg;
+	}
+	public void setKanriFlg(boolean kanriFlg){
+		this.kanriFlg=kanriFlg;
+	}
+
+
 
 
 }
