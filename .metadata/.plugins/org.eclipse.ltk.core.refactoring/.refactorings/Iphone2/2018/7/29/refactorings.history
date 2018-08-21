@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="コンパイル単位名 &apos;jp.co.internous.Iphone2.M3Player.java&apos; を &apos;Mp3Player.java&apos; に変更&#x0D;&#x0A;- 元のプロジェクト: &apos;Iphone2&apos;&#x0D;&#x0A;- オリジナル要素: &apos;jp.co.internous.Iphone2.M3Player.java&apos;&#x0D;&#x0A;- 名前変更済み要素: &apos;jp.co.internous.Iphone2.Mp3Player.java&apos;" description="コンパイル単位名 &apos;M3Player.java&apos; を変更します" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;jp.co.internous.Iphone2{M3Player.java" name="Mp3Player.java" references="false" stamp="1531791836345" version="1.0"/>
-</session>

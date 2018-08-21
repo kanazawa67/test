@@ -19,7 +19,7 @@ public class MyPageDAO {
 		ArrayList<MyPageDTO> myPageDTO=new ArrayList<MyPageDTO>();
 		String sql=
 				"SELECT "
-				+ "ubit,iit.item_name,ubit.total_price,ubit.total_count, "
+				+ "ubit.id,iit.item_name,ubit.total_price,ubit.total_count, "
 				+ "ubit.pay,ubit.insert_date "
 
 				+ "FROM "

@@ -56,7 +56,7 @@ public class MyPageDTO {
 		this.userName=userName;
 	}
 
-	public String get(){
+	public String getId(){
 		return id;
 	}
 
