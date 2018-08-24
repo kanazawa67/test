@@ -20,7 +20,7 @@ public class HomeAction extends ActionSupport implements SessionAware{
 			session.put("id", buyItemDTO.getId());
 			session.put("buyItem_name", buyItemDTO.getItemName());
 			session.put("buyItem_price", buyItemDTO.getItemPrice());
-			result=SUCCESS;;
+			result=SUCCESS;
 		}
 		return result;
 	}

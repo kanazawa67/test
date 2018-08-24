@@ -78,7 +78,7 @@ clear:both;
 			</tr>
 			<tr id="box">
 					<td>
-						<label>ロスインPASS:</label>
+						<label>ログインPASS:</label>
 					</td>
 					<td>
 						<s:property value="loginPassword" escape="false"/>

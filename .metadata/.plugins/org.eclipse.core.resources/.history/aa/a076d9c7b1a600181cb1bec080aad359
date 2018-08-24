@@ -1,0 +1,82 @@
+package com.internousdev.ecsite.action;
+
+import java.util.Map;
+
+import org.apache.struts2.interceptor.SessionAware;
+
+import com.opensymphony.xwork2.ActionSupport;
+
+
+public class KanrishaAction extends ActionSupport implements SessionAware{
+	public Map<String,Object> session;
+	private String shohinFlg;
+	private String shihinIchiranFlg;
+	private String userFlg;
+	private String userIchiranFlg;
+
+	public String execute(){
+		String result= "shohin";
+
+		if(!(shohinFlg==null)){
+		return result;
+	}
+		String result="shohinIchiranFlg";
+		else if(!(shohinIchiranFlg=null)){
+			return result;
+		}
+
+		String result="userFlg";
+		else if(!(userFlg=null)){
+			return result;
+		}
+
+		String result="userIchiranFlg";
+		else (!(userIchiranFlg)){
+			return result;
+		}
+	}
+
+
+	public String getShohinFlg(){
+		return this.shohinFlg;
+	}
+
+	public void setShohinFlg(String shohinFlg){
+		this.shohinFlg=shohinFlg;
+	}
+
+	public String getShohinIchiranFlg(){
+		return this.shohinIchiranFlg;
+	}
+
+	public void setShohinIchiranFlg(String shohinIchiranFlg){
+		this.shohinIchiranFlg=shohinIchiranFlg;
+	}
+
+	public String getUserFlg(){
+		return this.userFlg;
+	}
+
+	public void setUserFlg(String userFlg){
+		this.userFlg=userFlg;
+	}
+
+	public String getUserFlg(){
+		return this.userFlg;
+	}
+
+	public void setUserFlg(String userFlg){
+		this.userFlg=userFlg;
+	}
+
+	@Override
+	public void setSession(Map<String,Object> session){
+		this.session=session;
+	}
+	public Map<String,Object> getSession(){
+		return this.session;
+	}
+
+
+
+}

@@ -92,9 +92,11 @@ text-align:right;
 		<div id="left">
 			<h3>商品管理</h3>
 			<s:form action="ShohinAction">
+			<input type="hidden" name="shohinFlg" value="1">
 				<s:submit value="商品追加画面"/>
 			</s:form>
 			<s:form action="ShohinIchiranAction">
+			<input type="hidden" name="shohinIchiranFlg" value="1">
 				<s:submit value="商品一覧画面"/>
 			</s:form>
 		</div>
@@ -102,9 +104,11 @@ text-align:right;
 		<div id="right">
 		<h3>ユーザー管理</h3>
 			<s:form action="UserAction">
+			<input type="hidden" name="userFlg" value="1">
 				<s:submit value="ユーザー追加画面"/>
 			</s:form>
 			<s:form action="UserIchiranAction">
+			<input type="hidden" name="userIchiranFlg" value="1">
 				<s:submit value="ユーザー一覧画面"/>
 			</s:form>
 		</div>
