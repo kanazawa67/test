@@ -70,24 +70,34 @@ text-align:right;
 		<div>
 			<table border="1">
 			<tr>
+				<th>商品ID</th>
 				<th>商品名</th>
 				<th>値段</th>
 				<th>個数</th>
 				<th>更新日</th>
+				<th>詳細</th>
 
-			</tr>
+
+
+		</tr>
 		<s:iterator value="shohinList">
-			<tr>
+		<tr>
+				<td><s:property value="id"/></td>
 				<td><s:property value="itemName"/></td>
 				<td><s:property value="itemPrice"/><span>円</span></td>
 				<td><s:property value="itemStock"/><span>個</span></td>
-				<td><s:property value="update_date"/></td>
+				<td><s:property value="insert_date"/></td>
+				<td><a href='<s:url action="ProductDetailsAction">
+				<s:param name="productId" value="%{productId}"/>
+				</s:url>'><span>詳細</span></a></td>
+
 			</tr>
 			</s:iterator>
+
 			</table>
 
 		<div id="text-right">
-			<p>Homeへ戻る場合は<a href='<s:url action="GoHomeAction"/>'>こちら</a></p>
+			<p>管理者画面へ戻る場合は<a href='<s:url action="GoKanriAction"/>'>こちら</a></p>
 			<p>ログアウトする場合は<a href='<s:url action="LogoutAction"/>'>こちら</a></p>
 		</div>
 	</div>

@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 <meta http-equiv="Content-Style-Type" content="text/css"/>
 <meta http-equiv="Content-Script-Type" content="text/javascript"/>
 <meta http-equiv="imagetoolbar" content="no"/>
@@ -65,7 +65,7 @@ text-align:right;
 	</div>
 	<div id="main">
 		<div id="top">
-			<p>ShohinCreate</p>
+			<p>商品追加画面</p>
 		</div>
 		<div>
 			<s:if test="errorMassage!=''">
@@ -91,7 +91,7 @@ text-align:right;
 				</tr>
 				<tr>
 					<td>
-						<label>個数</label>
+						<label>個数:</label>
 					</td>
 					<td>
 						<input type="text" name="ItemStock" value=""/>
@@ -103,7 +103,7 @@ text-align:right;
 			</table>
 			<div>
 				<span>前画面に戻る場合は</span>
-				<a href='<s:url action="HomeAction"/>'>こちら</a>
+				<a href='<s:url action="GoKanriAction"/>'>こちら</a>
 			</div>
 		</div>
 	</div>

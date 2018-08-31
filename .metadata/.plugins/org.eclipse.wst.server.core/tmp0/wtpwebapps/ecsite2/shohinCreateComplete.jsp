@@ -64,12 +64,12 @@ clear:both;
 	</div>
 	<div id="main">
 		<div id="top">
-			<p>ShohinCreateComplete</p>
+			<p>商品追加画面</p>
 		</div>
 		<div>
 			<h3>ユーザーの登録が完了致しました。</h3>
 			<div>
-				<a href='<s:url action="HomeAction"/>'>ログインへ</a>
+				<a href='<s:url action="GoKanriAction"/>'>管理者画面へ</a>
 			</div>
 		</div>
 	</div>

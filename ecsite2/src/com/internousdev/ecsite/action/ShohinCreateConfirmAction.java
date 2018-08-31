@@ -21,9 +21,9 @@ public class ShohinCreateConfirmAction extends ActionSupport implements SessionA
 				if(!(itemName.equals(""))
 					&&!(itemPrice.equals(""))
 					&&!(itemStock.equals(""))){
-						session.put("itemName", itemName);
-						session.put("itemPrice", itemPrice);
-						session.put("itemStock", itemStock);
+						session.put("item_name", itemName);
+						session.put("item_price", itemPrice);
+						session.put("item_stock", itemStock);
 				}else{
 					setErrorMassage("未入力の項目があります。");
 					result=ERROR;

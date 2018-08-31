@@ -18,9 +18,9 @@ public class ShohinCreateCompleteAction extends ActionSupport implements Session
 
 	public String execute() throws SQLException{
 
-		shohinCreateCompleteDAO.createShohin(session.get("itemName").toString(),
-				session.get("itemPrice").toString(),
-				session.get("itemStock").toString());
+		shohinCreateCompleteDAO.createShohin(session.get("item_name").toString(),
+				session.get("item_price").toString(),
+				session.get("item_stock").toString());
 		String result=SUCCESS;
 
 		return result;
